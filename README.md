@@ -1,5 +1,5 @@
 # rpi-iojs
-Raspberry Pi compatible Docker base image with [io.js](https://iojs.org) preinstalled.
+Raspberry Pi compatible Docker base image with [io.js](https://iojs.org).
 
 Run all the commands from within the project root directory.
 
