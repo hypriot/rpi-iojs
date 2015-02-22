@@ -7,6 +7,7 @@ Run all the commands from within the project root directory.
 - [Source Project Page](https://github.com/hypriot)
 - [Source Repository](https://github.com/hypriot/rpi-iojs)
 - [Dockerfile](https://github.com/hypriot/rpi-iojs/blob/master/Dockerfile)
+- [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-iojs/)
 
 
 #### Build the Docker Image
