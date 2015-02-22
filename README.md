@@ -1,16 +1,44 @@
 # rpi-iojs
+
+[![dockeri.co](http://dockeri.co/image/hypriot/rpi-iojs)](https://registry.hub.docker.com/u/hypriot/rpi-iojs/)
+
 Raspberry Pi compatible Docker base image with [io.js](https://iojs.org).
 
-Run all the commands from within the project root directory.
-
-### Build Details
+## Details
 - [Source Project Page](https://github.com/hypriot)
 - [Source Repository](https://github.com/hypriot/rpi-iojs)
 - [Dockerfile](https://github.com/hypriot/rpi-iojs/blob/master/Dockerfile)
-- [DockerHub] (https://registry.hub.docker.com/u/hypriot/rpi-iojs/)
 
+## How to use this image
 
-#### Build the Docker Image
+If you want to distribute your application on the docker registry, create a `Dockerfile` in the root of application directory:
+
+```
+FROM hypriot/rpi-iojs:latest
+
+# Expose the ports that your app uses. For example:
+EXPOSE 8080
+```
+
+Then simply run:
+
+```bash
+$ docker build -t rpi-iojs-app .
+...
+$ docker run --rm -it rpi-iojs-app
+```
+
+To run a single script, you can mount it in a volume under `/usr/src/app`. From the root of your application directory (assuming your script is named `index.js`):
+
+```bash
+$ docker run -v ${PWD}:/usr/src/app -w /usr/src/app -it --rm hypriot/rpi-iojs iojs index.js
+```
+
+## Contributing
+
+Run all the commands from within the project root directory.
+
+### Build the Docker Image
 ```bash
 make build
 ```
@@ -51,4 +79,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
