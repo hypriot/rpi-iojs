@@ -58,6 +58,10 @@ make push
 
 ## License
 
+View [license information](https://github.com/iojs/io.js/blob/master/LICENSE) for the software contained in this image.
+
+### License for the Dockerfile
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Hypriot
