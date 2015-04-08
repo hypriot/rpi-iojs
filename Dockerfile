@@ -4,7 +4,7 @@ FROM resin/rpi-raspbian:wheezy
 MAINTAINER Stefan Scherer <stefan@hypriot.com>
 
 # Install io.js (from tarball)
-ENV IOJS_VERSION 1.6.3
+ENV IOJS_VERSION 1.6.4
 ADD https://iojs.org/dist/v${IOJS_VERSION}/iojs-v${IOJS_VERSION}-linux-armv6l.tar.xz /
 RUN \
   cd /usr/local/ && \
