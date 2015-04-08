@@ -14,7 +14,7 @@ Raspberry Pi compatible Docker base image with [io.js](https://iojs.org).
 If you want to distribute your application on the docker registry, create a `Dockerfile` in the root of application directory:
 
 ```
-FROM hypriot/rpi-iojs:latest
+FROM hypriot/rpi-iojs:onbuild
 
 # Expose the ports that your app uses. For example:
 EXPOSE 8080
@@ -40,6 +40,11 @@ Run all the commands from within the project root directory.
 
 ### Build the Docker Image
 ```bash
+cd 1.6
+make build
+cd slim
+make build
+cd ../onbuild
 make build
 ```
 
