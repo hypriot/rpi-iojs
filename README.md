@@ -1,7 +1,5 @@
 # rpi-iojs
 
-[![dockeri.co](http://dockeri.co/image/hypriot/rpi-iojs)](https://registry.hub.docker.com/u/hypriot/rpi-iojs/)
-
 Raspberry Pi compatible Docker base image with [io.js](https://iojs.org).
 
 ## Details
