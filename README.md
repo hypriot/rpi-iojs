@@ -1,5 +1,7 @@
 # rpi-iojs
 
+**! Please note: This work is deprecated and will not be continued.**
+
 Raspberry Pi compatible Docker base image with [io.js](https://iojs.org).
 
 ## Details
